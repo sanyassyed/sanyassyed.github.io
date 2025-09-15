@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> HSE Safety Analytics | Sanya Syed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  
+  
+  <style>
+    .project-detail {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    .project-detail h1 {
+      font-size: 2.2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    .github-link {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .github-link a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #000;
+      border-radius: 6px;
+      background: #fff;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .github-link a:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    .section,
+    .highlight-box {
+      background-color: #fffaf4;
+      border: 1px solid #ddd;
+      padding: 1.8rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+
+    .highlight-box p {
+      margin-bottom: 0.8rem;
+    }
+
+    .section img {
+      display: block;
+      margin: 1.5rem auto 0;
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: 2px solid #000;
+      background-color: #fff;
+      color: #000;
+      font-weight: 600;
+      text-align: center;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+      background: #000;
+      color: #fff;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      line-height: 1.8;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.75;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-detail">
+    <h1>HSE Safety Analytics</h1>
+
+    <div class="github-link">
+      <a href="https://github.com/sanyassyed/DataAnalysis_HSE_Monitor_Dashboard" target="_blank">View GitHub Repo</a>
+    </div>
+
+    <div class="highlight-box">
+      <p><strong>Project Type:</strong>Data Analytics / Dashboard</p>
+      <p><strong>Tools Used:</strong>PowerBI, Excel</p>
+      </div>
+
+    <div class="highlight-box">
+      <p><strong>Client:</strong>Oil & Gas Company</p>
+      <p><strong>Overview:</strong> The HSE Monitor Dashboard is a comprehensive analytics solution designed to visualize workplace incidents, injuries, near misses, and vehicle incidents across multiple sites and business units. The dashboard enables organizations to monitor safety trends, understand severity levels, and make data-driven decisions to improve workplace safety.</p>
+    </div>
+
+    <div class="section">
+      <h2>Features & Functionality:</h2>
+      <ul>
+        <li><strong>Severity-Based Pages:</strong> Three separate pages for Minor, Major, and Critical incidents.</li>
+        <li><strong>Interactive Filters:</strong> Users can select a specific year and month to view relevant data, helping focus on time-specific insights.</li>
+        <li><strong>Key Metrics & KPIs:</strong> Displays total incidents, near misses, injuries, vehicle incidents, lost hours, and month-over-month percentage changes.</li>
+        <li><strong>Detailed Breakdown:</strong> Includes incidents by site and business unit, and injuries by type (finger, ankle, arm, foot, lower back, etc.) to identify high-risk areas.</li>
+        <li><strong>Yearly Trend Analysis:</strong> A line graph displays total incidents, injuries, near misses, vehicle incidents, and lost hours across months for the whole year, providing a clear view of long-term trends.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Data Summary</h2>
+      <p>Data was sourced from organizational Health, Safety & Environment (HSE) records and includes:</p>
+      <ul>
+        <li><strong>Incidents</strong>: Count of reported workplace incidents</li>
+        <li><strong>Near Misses</strong>: Events with potential to cause harm but did not</li>
+        <li><strong>Lost Hours</strong>: Total hours lost due to injuries</li>
+        <li><strong>Injuries</strong>: Recorded injuries by type (finger, ankle, arm, foot, lower back, etc.)</li>
+        <li><strong>Vehicle Incidents</strong>: Safety-related vehicle events</li>
+        <li><strong>Site & Business Unit</strong>: Location and organizational unit of each record</li>
+        <li><strong>Severity</strong>: Categorized as Minor, Major, or Critical</li>
+      </ul>
+      <p>The dataset covers multiple sites and business units, with data collected monthly and available for year-over-year comparison.</p>
+      <img src="assets/hse_sample_dataset.png" alt="Sample dataset preview" />
+    </div>
+
+    <div class="section">
+      <h2>Analytical Approach</h2>
+      <p>The dashboard design followed a structured approach:</p>
+      <ul>
+        <li>Data preprocessing in <strong>Excel/CSV</strong> for consistency</li>
+        <li>Loading and transforming data in <strong>PowerBI</strong></li>
+        <li>Building <strong>interactive dashboards</strong> with filters for year and month</li>
+        <li>Visualizing incidents, injuries, near misses, and lost hours across sites and severity levels</li>
+        <li>Incorporating <strong>yearly trend analysis</strong> with line charts unaffected by monthly filters</li>
+      </ul>
+      <img src="assets/hse_dimension_model.png" alt="Dashboard workflow 1" />
+    </div>
+
+    <div class="section">
+      <h2>Key Findings</h2>
+      <ul>
+        <li><strong>Severity-based insights:</strong> Major incidents were high in numbers and lost hours.</li>
+        <li><strong>Site variation:</strong> Certain sites consistently reported more incidents, indicating hotspots for intervention.</li>
+        <li><strong>Injury types:</strong> Lower back and finger injuries were among the most frequent across business units.</li>
+        <li><strong>Yearly patterns:</strong> In the year 2023 the all the incidents have gone up towards the end of the year compared to other years.</li>
+      </ul>
+      <img src="assets/hse_dashboard_1.png" alt="Dashboard workflow 1" />
+      <img src="assets/hse_dashboard_2.png" alt="Dashboard workflow 2" />
+      <img src="assets/hse_dashboard_3.png" alt="Dashboard workflow 3" />
+    </div>
+
+    <div class="section">
+      <h2>Business Recommendations</h2>
+      <ul>
+        <li>Focus training and safety interventions at sites with consistently high incident rates.</li>
+        <li>Address recurring injury types (e.g., lower back, finger) with targeted safety programs.</li>
+        <li>Implement monthly safety reviews to act on early warning signs of rising incidents.</li>
+        <li>Leverage historical trend analysis to plan proactive resource allocation for high-risk months.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Assumptions & Limitations</h2>
+      <ul>
+        <li>Data quality depends on accurate and timely incident reporting.</li>
+        <li>External factors (e.g., weather, workload changes) were not included in analysis.</li>
+        <li>Yearly trend analysis assumes consistency in reporting practices across months.</li>
+        <li>Filters allow single month-year selection; comparisons outside this scope require separate exports.</li>
+      </ul>
+    </div>
+
+<div class="section" style="text-align:center;">
+  <a href="index.html" class="btn">← Back to Home</a>
+</div>
+  </div>
+</body>
+</html>

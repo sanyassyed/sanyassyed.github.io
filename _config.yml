@@ -1,0 +1,15 @@
+title: "Sanya Syed — Data Engineer & Analyst"
+description: "Continuously learning, engineering, and delivering data solutions that matter"
+baseurl: ""
+url: ""
+markdown: kramdown
+theme: jekyll-theme-minimal
+plugins: []
+defaults:
+  - scope: { path: "" }
+    values:
+      layout: default
+author: "Sanya Syed"
+github_username: "SanyaSSyed"
+exclude:
+  - "README.md"
