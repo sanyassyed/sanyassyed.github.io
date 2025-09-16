@@ -3,3 +3,5 @@ description: "Continuously learning, engineering, and delivering data solutions 
 theme: jekyll-theme-minimal
 author: "Sanya Syed"
 github_username: "SanyaSSyed"
+exclude:
+  - "README.md"
